@@ -12,7 +12,7 @@ if (isset($_POST["importCurrency"])) {
   $response = $DataModel->readCurrency();
 }
 ?>
-<?php include './inc/header.php'; ?>
+<?php include './header.php'; ?>
 
 <div class="row">
   <div class="col border p-4">

@@ -12,7 +12,7 @@ if (isset($_POST["submitSearch"])) {
 }
 if (!empty($countries)) {
 ?>
-    <?php include './inc/header.php'; ?>
+    <?php include './header.php'; ?>
     <h3>Imported records (Countries):</h3>
     <form action="" method="post" name="" id="" class="row g-3 mt-4 w-75">
         <div class="col-auto">
