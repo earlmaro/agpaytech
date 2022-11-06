@@ -19,8 +19,8 @@ class DataModel
         $limit =  50;
         $page = isset($_GET['page']) ? $_GET['page'] : 1;
         $start = ($page - 1) * $limit;
-         if(isset($_POST['search'])){
-            $value = $_POST['search'];
+         if(isset($_GET['search'])){
+            $value = $_GET['search'];
             $body = $this->conn->select("SELECT * FROM Countries WHERE CONCAT(
                 continent_code,
                 currency_code,
@@ -73,8 +73,8 @@ class DataModel
         $limit =  50;
         $page = isset($_GET['page']) ? $_GET['page'] : 1;
         $start = ($page - 1) * $limit;
-        if (isset($_POST['search'])) {
-            $value = $_POST['search'];
+        if (isset($_GET['search'])) {
+            $value = $_GET['search'];
             $body = $this->conn->select("SELECT * FROM Currencies WHERE CONCAT(
                 iso_code,
                 iso_numeric_code,
